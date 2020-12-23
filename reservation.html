@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reservation</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+      <link href="css/reservation.css" rel="stylesheet">
+	
+  </head>
+  <body>
+      <!--NAVBAR-->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container">
+     <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+<li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+
+<li class="nav-item">
+          <a class="nav-link" href="reservation.html">Book a table</a>
+        </li>
+</ul>
+</div>
+</div>
+</nav>
+<!--END OF NAVBAR-->
+      
+    <section class="banner">
+            <div class = "card-container">
+                <div class = "card-img">
+                    <!-- image here -->
+                </div>
+
+                <div class="card-content">
+                    <h3>Reservation</h3>
+                    <form>
+                        <div class="form-row">
+                            <select name = "days">
+                                <option value="day-select">Select Day</option>
+                                <option value="sunday">Sunday</option>
+                                <option value="monday">Monday</option>
+                                <option value="tuesday">Tuesday</option>
+                                <option value="wednesday">Wednesday</option>
+                                <option value="thursday">Thursday</option>
+                                <option value="friday">Friday</option>
+                                <option value="saturday">Saturday</option>
+                            </select>
+
+                            <select name="hours">
+                                <option value="hour-select">Select Hour</option>
+                                <option value="10">10: 00</option>
+                                <option value="10">12: 00</option>
+                                <option value="10">14: 00</option>
+                                <option value="10">16: 00</option>
+                                <option value="10">18: 00</option>
+                                <option value="10">20: 00</option>
+                                <option value="10">22: 00</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <input type="text" placeholder="Full Name">
+                            <input type="number" placeholder="How Many Persons?" min="1" max="50">
+                        </div>
+
+                        <div class="form-row">
+                            
+                            <input type="submit" value="BOOK TABLE">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+  
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.3.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+  </body>
+</html>

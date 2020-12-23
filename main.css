@@ -1,0 +1,321 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "BalooChettan2 Bold";
+    line-height: 1.5;
+}
+
+.title-text{
+    
+    color:#7B001F;
+    font-size: 40px;
+    text-align: center;
+}
+
+.under-title{
+    background-color: rgba(1, 1, 1, 0.6);
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
+.carousel-caption {
+  bottom: 270px;
+}
+
+.carousel-caption h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+color: whitesmoke;
+    
+
+
+}
+
+.carousel-caption p {
+  width: 75%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.navbar-light .navbar-brand {
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-toggler {
+  background: #fff;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.nav-link {
+  padding: .2rem 1rem;
+}
+
+.nav-link.active,.nav-link:focus{
+  color: #800020;
+}
+
+.navbar-toggler {
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: 0.3;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #800020;
+}
+
+.navbar{
+    background-color: rgba(1,1,1,1)
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: #800020;
+  text-decoration: none;
+}
+
+/*=====header=======*/
+
+
+header{
+min-height: 100vh;
+    margin-top: auto;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 100%), url("../images/pexels-irina-iriser-2174068.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.hero.title {
+    font-family: "BalooChettan2 Bold";
+    color:#fff;
+    font-size: 50px;
+    
+}
+
+.title {
+    font-family:"BalooChettan2 ExtraBold";
+    color: white;
+    font-weight: bold;
+}
+
+.hero-button{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    border-radius: 200px;
+    font-weight: bold;
+    background: #FFA500;
+    color: white;
+    cursor: pointer;
+    border: 2px solid #FFA500;
+    margin-top: 10px;
+}
+
+.hero-button:hover {
+    background:#fff;
+    color:#FFA500;
+    border:none;
+}
+
+
+
+/*=======end of header======*/
+/*=======ABOUT US======*/
+#about{
+    padding: 40px;
+}
+
+.about{
+    margin: 30px 0;
+    display: flex;
+    
+}
+
+.about-text{
+    font-style: italic;
+    font-size: 18px;
+}
+.about-icon .fas{
+    font-size: 60px;
+    color:#800020;
+    margin-right: 20px;
+}
+.about-subtitle{
+    text-transform: capitalize;
+    color: #800020;
+    font-size: 25px;
+}
+
+.about-info{
+    margin-top: 10px;
+    line-height: 1.5;
+    
+}
+
+.about-icon:hover .fas,
+.about-subtitle:hover
+{
+     transition: transform 2s ease, color 2s ease;
+    transform: translateY(-10px);
+    color:#800020;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 576px){
+    .about-center{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .about{
+        flex: 0 0 calc(50% - 16px);
+    }
+}
+
+@media screen and (min-width: 972px){
+    .about{
+        flex: 0 0 calc(33.3% - 16px);
+    }
+}
+
+/*------endof about us---------*/
+
+/*----------menu section--------*/
+.menu-image{
+    min-height: 80vh;
+    background: url("../images/pexels-pixabay-461198.jpg") center/ fixed no-repeat;
+}
+.menu-text{
+    min-height: 80vh;
+    align-items: center;
+    background: #0A4655;
+    padding: 40px 0;
+}
+.menu-text-center{
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    
+}
+.menu-text h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    
+}
+
+.menu-text p{
+    margin: 20px 0;
+    line-height: 2;
+
+}
+
+.menu-text a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    border-radius: 200px;
+    font-weight: bold;
+    background: rgb(10,10,10);
+    color: #FFA500;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.menu-text a:hover{
+color:#FFA500;
+    background: white;
+    border: none;
+}
+@media screen and (min-width:776px){
+    .menu{
+        display:flex;
+    }
+    .menu-text{
+        flex: 0 0 30%;
+    }
+    .menu-image{
+        flex: 0 0 70%;
+        clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%)
+    }
+    .menu{
+        background: #0A4655;
+    }
+}
+/*----------end of menu section--------*/
+
+
+/*---social icons---*/
+#social-icons{
+    height: 150px;
+    background: white;
+    text-align: center;
+    padding: 50px 0 50px 0;
+    
+}
+
+#social-icons a{
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 40px;
+    border-radius: 5px;
+    transition: transform 2s ease, color 2s ease;
+}
+
+#social-icons a:hover{
+    transform: translateY(-20px);
+}
+.facebook{
+    color:#3B5998;
+}
+.twitter{
+    color:#38a1f3;
+}
+.instagram{
+    color:#e1306c;
+}
+.youtube{
+    color:red;
+}
